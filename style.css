@@ -401,12 +401,10 @@ span{
     color: white;
 }
 .portfolio-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    justify-content: center;
     gap: 2.5rem;
-    color: black;
 }
 .portfolio-box {
     background-color: var(--main-color);
@@ -612,6 +610,20 @@ span{
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+    .portfolio-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+    .portfolio-box{
+        width: 100%;
+        height: 100%;
+    }
+    .project-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
 }
 @media(max-width:991px){
     header{
@@ -637,8 +649,11 @@ span{
     .services{
         padding-bottom: 7rem;
     }
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
+    .project{
+        padding-bottom: 7rem;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
     }
     .contact form{
         flex-direction: column;
@@ -702,5 +717,11 @@ span{
     }
     .project-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
     }
 }
