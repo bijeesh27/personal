@@ -247,7 +247,7 @@ span{
 }
 .education{
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .education h2{
     margin-bottom: 5rem;
@@ -335,6 +335,127 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
+
+.projects{
+    background: var(--bg-color);
+    color: white;
+}
+.project h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    color: black;
+}
+.project-box {
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+  
+.project-box:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+  
+.project-box .project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.project-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.project-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+
+
+.portfolio{
+    background: var(--bg-color);
+    color: white;
+}
+.portfolio h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.portfolio-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    color: black;
+}
+.portfolio-box {
+    background-color: var(--main-color);
+    height: 900px;
+    width: 600px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+  
+.portfolio-box:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+  
+.portfolio-box .portfolio-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.portfolio-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.portfolio-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+.portfolio img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+
+
+
 .services{
     background: var(--bg-color);
     color: black;
@@ -479,6 +600,9 @@ span{
     font-size: 16px;
     color: white;
 }
+.footer .copyright-icon{
+    color: white;
+}
 @media(max-width:1285px){
     html{
         font-size: 55%;
@@ -571,6 +695,12 @@ span{
         margin-bottom: 3rem;
     }
     .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projects h2{
+        margin-bottom: 3rem;
+    }
+    .project-container{
         grid-template-columns: repeat(1,1fr);
     }
 }
