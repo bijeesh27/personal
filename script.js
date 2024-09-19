@@ -23,24 +23,3 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-const form = document.querySelector("form");
-
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "projectsampleforwebsite@gmail.com",
-        Password : "7B18A39F1C56694F2BA2B0B6C4E64AFC2A68",
-        To : 'projectsampleforwebsite@gmail.com',
-        From : "projectsampleforwebsite@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
-
-form.addEventListener("submit", (e) =>{
-    e.preventDefault();
-
-    sendEmail();
-})
