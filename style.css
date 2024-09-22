@@ -506,6 +506,9 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+.service-info ul{
+    font-size: 2rem;
+}
 .contact{
     background-color: var(--bg-color);
 } 
